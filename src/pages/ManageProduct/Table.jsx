@@ -25,7 +25,7 @@ function Table() {
   }
   return (
     <>
-      <div className="m-2 z-[0]">
+      <div className="my-2 mx-auto z-[0] text-center">
         <table className="table">
           <thead>
             <tr>
