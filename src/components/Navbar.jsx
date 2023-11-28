@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <div className="navbar max-w-screen bg-base-100">
-        <div className="navbar-start">
+      <div className="navbar mx-auto max-w-full bg-base-100">
+        <div className="navbar-start ml-3">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden text-white">
               <svg
@@ -23,14 +23,14 @@ function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="text-white menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="text-white menu menu-sm dropdown-content mt-2 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
+              <li className="font-bold">
                 <Link to={"/"}>Home</Link>
               </li>
               <li>
                 <details close="true">
-                  <summary>Product</summary>
+                  <summary className="font-bold">Product</summary>
                   <ul>
                     <li>
                       <Link to={"/add-product"}>Add Product</Link>
@@ -42,43 +42,89 @@ function Navbar() {
                 </details>
               </li>
               <li>
+                <details close="true">
+                  <summary className="font-bold">Team</summary>
+                  <ul>
+                    <li>
+                      <Link to={"/add-member"}>Add Member</Link>
+                    </li>
+                    <li>
+                      <Link to={"/manage-member"}>Manage Member</Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li className="font-bold">
                 <Link to={"/contact-us"}>Contact US</Link>
               </li>
-              <li>
+              <li className="font-bold" >
                 <Link to={"/add-review"}>Add Review</Link>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-white">daisyUI</a>
+          <div className="btn btn-ghost text-xl text-white">3A</div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-white">
-            <li>
+            <li className="font-bold">
               <Link to={"/"}>Home</Link>
             </li>
             <li className="z-[1]">
-              <details close="true">
-                <summary>Product</summary>
-                <ul className="w-max">
-                  <li>
+              <div className="dropdown dropdown-bottom">
+                <div tabIndex={0} role="button" className="group flex mr-1 font-bold">
+                  Product
+                  <svg
+                    className="fill-current h-5 w-5 pt-1 transform group-focus:-rotate-180
+  transition duration-150 ease-in-out"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </div>
+                <ul className="dropdown-content z-[1] menu bg-dark mt-2 rounded-box w-44 font-semibold">
+                  <li className="rounded-sm p-1 hover:bg-gray-100">
                     <Link to={"/add-product"}>Add Product</Link>
                   </li>
-                  <li>
+                  <li className="rounded-sm p-1 hover:bg-gray-100">
                     <Link to={"/manage-product"}>Manage Product</Link>
                   </li>
                 </ul>
-              </details>
+              </div>
             </li>
-            <li>
+            <li className="z-[1]">
+            <div className="dropdown dropdown-bottom">
+                <div tabIndex={0} role="button" className="group flex mr-1 font-bold">
+                  Team
+                  <svg
+                    className="fill-current h-5 w-5 pt-1 transform group-focus:-rotate-180
+  transition duration-150 ease-in-out"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </div>
+                <ul className="dropdown-content z-[1] menu bg-dark mt-2 rounded-box w-44 font-semibold">
+                  <li className="rounded-sm p-1 hover:bg-gray-100">
+                    <Link to={"/add-member"}>Add Member</Link>
+                  </li>
+                  <li className="rounded-sm p-1 hover:bg-gray-100">
+                    <Link to={"/manage-member"}>Manage Member</Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="font-bold">
               <Link to={"/contact-us"}>Contact US</Link>
             </li>
-            <li>
+            <li className="font-bold">
               <Link to={"/add-review"}>Add Review</Link>
             </li>
           </ul>
         </div>
         <div className="dropdown bg-dark text-white">
-          <label tabIndex={0} className="btn m-1">
+          <label tabIndex={0} className="btn mr-3">
             Theme
             <svg
               width="12px"

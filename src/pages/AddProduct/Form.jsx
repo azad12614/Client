@@ -34,7 +34,7 @@ function Form() {
       <form
         method="POST"
         onSubmit={formHandle}
-        className="m-auto p-5 rounded-lg border-1"
+        className="m-auto p-5 rounded-lg border-1 border-success text-success font-semibold"
       >
         <div className="grid md:grid-cols-1 md:gap-2">
           <div className="relative z-0 w-full mb-3 group">
@@ -42,7 +42,7 @@ function Form() {
               type="text"
               name="floating_name"
               id="floating_name"
-              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 text-success border-success appearance-none dark:text-success dark:border-success dark:focus:border-success focus:outline-none focus:ring-0 focus:border-success peer"
+              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-success appearance-none focus:border-success focus:outline-none focus:ring-0 peer"
               placeholder=" "
               required=""
             />
@@ -58,7 +58,7 @@ function Form() {
               type="text"
               name="floating_price"
               id="floating_price"
-              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 text-success border-success appearance-none dark:text-success dark:border-success dark:focus:border-success focus:outline-none focus:ring-0 focus:border-success peer"
+              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-success appearance-none focus:border-success focus:outline-none focus:ring-0 peer"
               placeholder=" "
               required=""
             />
@@ -75,15 +75,15 @@ function Form() {
             type="text"
             name="floating_items"
             id="floating_items"
-            className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 text-success border-success appearance-none dark:text-success dark:border-success dark:focus:border-success focus:outline-none focus:ring-0 focus:border-success peer"
-            placeholder=" "
+            className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-success appearance-none focus:border-success focus:outline-none focus:ring-0 peer"
+              placeholder=" "
             required=""
           />
           <label
             htmlFor="floating_items"
             className="peer-focus:font-medium absolute text-md text-gray-600 dark:text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-success peer-focus:dark:text-success peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
-            items
+            Items
           </label>
         </div>{" "}
         <button

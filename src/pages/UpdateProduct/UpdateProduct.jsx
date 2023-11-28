@@ -4,7 +4,7 @@ import Form from "./Form";
 
 function UpdateProduct() {
   return (
-    <div className="d-flex flex-column min-vh-100 max-w-100">
+    <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-dark">
       <Navbar></Navbar>
       <h1 className="text-center m-3 font-bold">Update</h1>
       <Form></Form>
