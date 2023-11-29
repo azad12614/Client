@@ -3,10 +3,14 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import ContactUS from "./pages/ContactUS/ContactUS";
 import AddProduct from "./pages/AddProduct/AddProduct";
+import AddMember from "./pages/AddMember/AddMember";
 import ManageProduct from "./pages/ManageProduct/ManageProduct";
+import ManageMember from "./pages/ManageMember/ManageMember";
 import AddReview from "./pages/AddReview/AddReview";
 import ProductDetails from "./pages/Details/ProductDetails";
+import MemberDetails from "./pages/Details/MemberDetails";
 import UpdateProduct from "./pages/UpdateProduct/UpdateProduct";
+import UpdateMember from "./pages/UpdateMember/UpdateMember";
 
 function App() {
   const router = createBrowserRouter([
@@ -33,10 +37,6 @@ function App() {
       },
     },
     {
-      path: "/add-review",
-      element: <AddReview />,
-    },
-    {
       path: "/product/:id",
       element: <ProductDetails></ProductDetails>,
       loader: function ({params}) {
@@ -49,6 +49,35 @@ function App() {
       loader: function ({params}) {
         return fetch(`http://localhost:3000/product/${params.id}`);
       },
+    },
+    {
+      path: "/add-member",
+      element: <AddMember/>,
+    },
+    {
+      path: "/manage-member",
+      element: <ManageMember />,
+      loader: function () {
+        return fetch("http://localhost:3000/all-members");
+      },
+    },
+    {
+      path: "/member/:id",
+      element: <MemberDetails></MemberDetails>,
+      loader: function ({params}) {
+        return fetch(`http://localhost:3000/member/${params.id}`);
+      },
+    },
+    {
+      path: "/update-member/:id",
+      element: <UpdateMember></UpdateMember>,
+      loader: function ({params}) {
+        return fetch(`http://localhost:3000/Member/${params.id}`);
+      },
+    },
+    {
+      path: "/add-review",
+      element: <AddReview />,
     }
   ]);
   return <RouterProvider router={router} />;
