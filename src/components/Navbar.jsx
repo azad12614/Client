@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <div className="navbar mx-auto max-w-full bg-base-100">
-        <div className="navbar-start ml-3">
+      <div className="navbar mx-auto max-w-7xl bg-[#982176]">
+        <div className="navbar-start ml-5">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden text-white">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden text-[#fed7aa]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -23,7 +23,7 @@ function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="text-white menu menu-sm dropdown-content mt-2 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="text-[#fed7aa] menu menu-sm dropdown-content mt-2 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li className="font-bold">
                 <Link to={"/"}>Home</Link>
@@ -62,10 +62,10 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="btn btn-ghost text-xl text-white">3A</div>
+          <div className="btn btn-ghost text-xl text-[#fed7aa] bg-[#3E001F] hover:bg-transparent border-0 rounded-full">3A</div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-white">
+          <ul className="menu menu-horizontal px-1 text-[#fed7aa]">
             <li className="font-bold">
               <Link to={"/"}>Home</Link>
             </li>
@@ -123,8 +123,8 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="dropdown bg-dark text-white">
-          <label tabIndex={0} className="btn mr-3">
+        <div className="dropdown bg-[#982176] text-[#fed7aa]">
+          <label tabIndex={0} className="btn text-white bg-[#3E001F] hover:bg-transparent border-0 mr-5">
             Theme
             <svg
               width="12px"
@@ -138,7 +138,7 @@ function Navbar() {
           </label>
           <ul
             tabIndex={0}
-            className="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52"
+            className="dropdown-content text-white bg-[#3E001F] z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52"
           >
             <li>
               <input
