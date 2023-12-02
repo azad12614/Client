@@ -5,13 +5,7 @@ function Footer() {
       <footer className="mx-auto max-w-7xl bg-[#982176] text-white px-5">
         <div className="container p-6 mx-auto">
           <div className="flex flex-col items-center text-center">
-            <a href="#">
-              <img
-                className="w-auto h-7"
-                src="https://merakiui.com/images/full-logo.svg"
-                alt=""
-              />
-            </a>
+          <div className="btn btn-ghost text-xl text-[#fed7aa] bg-[#3E001F] hover:bg-transparent border-0 rounded-full">3A</div>
               <ul className="menu menu-horizontal flex flex-wrap justify-center mt-6 -mx-4">
                 <li className="font-bold">
                   <Link to={"/"}>Home</Link>

@@ -22,22 +22,25 @@ function Table() {
   return (
     <>
       <div className="my-auto mx-auto md:mx-40 lg:mx-96">
+        <h1 className="text-center text-4xl font-semibold text-white pb-4">
+          Manage your Product
+        </h1>
         <table className="table">
           <thead>
             <tr>
-              <th className="text-center font-bold text-lg border-success bg-dark text-white">
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
                 Name
               </th>
-              <th className="text-center font-bold text-lg border-success bg-dark text-white">
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
                 Price
               </th>
-              <th className="text-center font-bold text-lg border-success bg-dark text-white">
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
                 Items
               </th>
-              <th className="text-center font-bold text-lg border-success bg-dark text-white">
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
                 Date
               </th>
-              <th className="text-center font-bold text-lg border-success bg-dark text-white">
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
                 Actions
               </th>
             </tr>
@@ -45,19 +48,19 @@ function Table() {
           <tbody>
             {products?.map((product) => (
               <tr className="hover" key={product._id}>
-                <td className="text-center text-base border-white bg-dark text-white">
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
                   {product.name}
                 </td>
-                <td className="text-center text-base border-white bg-dark text-white">
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
                   {product.price}
                 </td>
-                <td className="text-center text-base border-white bg-dark text-white">
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
                   {product.items}
                 </td>
-                <td className="text-center text-base border-white bg-dark text-white">
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
                   {product.date}
                 </td>
-                <td className="text-center text-base border-white bg-dark text-white">
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
                   <Link to={`/product/${product?._id}`}>
                     <button className="btn btn-sm md:btn-md lg:btn-lg btn-outline btn-accent mx-1">
                       {" "}

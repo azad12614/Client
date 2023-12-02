@@ -22,24 +22,25 @@ function Table() {
   return (
     <>
       <div className="my-auto mx-auto md:mx-40 lg:mx-96">
+      <h1 className="text-center text-4xl font-semibold text-white pb-4">Manage Team</h1>
         <table className="table">
           <thead>
             <tr>
-              <th className="text-center font-bold text-lg border-success bg-dark text-white">Name</th>
-              <th className="text-center font-bold text-lg border-success bg-dark text-white">Role</th>
-              <th className="text-center font-bold text-lg border-success bg-dark text-white">URL</th>
-              <th className="text-center font-bold text-lg border-success bg-dark text-white">Message</th>
-              <th className="text-center font-bold text-lg border-success bg-dark text-white">Actions</th>
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">Name</th>
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">Role</th>
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">URL</th>
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">Message</th>
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">Actions</th>
             </tr>
           </thead>
           <tbody>
             {team?.map((member) => (
               <tr className="hover" key={member._id}>
-                <td className="text-center text-base border-white bg-dark text-white">{member.name}</td>
-                <td className="text-center text-base border-white bg-dark text-white">{member.role}</td>
-                <td className="text-center text-base border-white bg-dark text-white">{member.url}</td>
-                <td className="text-center text-base border-white bg-dark text-white">{member.msg}</td>
-                <td className="text-center text-base border-white bg-dark text-white">
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">{member.name}</td>
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">{member.role}</td>
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">{member.url}</td>
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">{member.msg}</td>
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
                   <Link to={`/member/${member?._id}`}>
                     <button className="btn btn-sm md:btn-md lg:btn-lg btn-outline btn-accent mx-1"> <FaEye></FaEye> </button>
                   </Link>
