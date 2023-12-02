@@ -8,13 +8,13 @@ function Card({ product }) {
     }
   };
   return (
-    <div className="card card-compact text-center text-white bg-base-100 shadow-xl">
+    <div className="card card-compact text-center bg-[#fed7aa] shadow-xl">
       <figure>
         <img src="https://picsum.photos/250/200" alt="Product image" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{product.name}</h2>
-        <p>
+        <p className="font-semibold">
           Items: {product.items} <br></br> Prices: {product.price}
         </p>
         <div className="card-actions justify-evenly">

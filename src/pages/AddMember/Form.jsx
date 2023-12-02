@@ -13,7 +13,6 @@ function Form() {
     const member = {
       name,role,img,msg
     };
-    console.log(product);
     fetch("http://localhost:3000/add-member", {
       method: "POST",
       headers: {

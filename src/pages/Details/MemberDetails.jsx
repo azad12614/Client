@@ -7,12 +7,12 @@ function MemberDetails() {
   return (
     <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-dark">
       <Navbar></Navbar>
-      <div className="card card-compact text-center my-auto mx-auto w-96 text-white bg-base-100 shadow-xl">
+      <div className="card card-compact text-center my-auto mx-auto w-72 text-white bg-base-100 shadow-xl">
         <figure>
           <img src="https://picsum.photos/450/400" alt="Product image" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-7xl">{member.name}</h2>
+          <h2 className="card-title text-6xl">{member.name}</h2>
           <h1 className="my-3 text-4xl">Role: {member.role}</h1>
           <p className="my-3  text-xl">Message: {member.msg}</p>
         </div>

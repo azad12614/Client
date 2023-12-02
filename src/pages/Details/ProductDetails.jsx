@@ -5,7 +5,7 @@ import { useLoaderData } from "react-router-dom";
 function ProductDetails() {
   const product = useLoaderData();
   return (
-    <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-dark">
+    <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#F11A7B]">
       <Navbar></Navbar>
       <div className="bg-white">
         <div className="pt-6">
