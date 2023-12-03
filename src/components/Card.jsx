@@ -7,13 +7,17 @@ function Card({ product }) {
       return <button className="btn btn-primary">TBA</button>;
     }
   };
+  const pic = product?.image;
+  console.log(pic);
+  console.log(product?.image);
   return (
     <div className="card card-compact text-center bg-[#fed7aa] shadow-xl">
       <figure>
-        <img src={product?.image} alt="Product image" />
+        <img src={`${pic}`} alt="Product image" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{product.name}</h2>
+        <h2 className="text-dark">{product?.image}</h2>
         <p className="font-semibold">
           Items: {product.items} <br></br> Prices: {product.price}
         </p>

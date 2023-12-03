@@ -9,12 +9,12 @@ function Form() {
     const name = event.target.name.value;
     const genre = event.target.genre.value;
     const date = event.target.date.value;
-    const img = event.target.img.value;
+    const image = event.target.image.value;
     const platform = event.target.platform.value;
     const price = event.target.price.value;
     const description = event.target.description.value;
     const products = {
-      name, genre, date, img, platform, price,description
+      name, genre, date, image, platform, price,description
     };
     fetch(`http://localhost:3000/update/${product?._id}`, {
       method: "PUT",
@@ -96,15 +96,15 @@ function Form() {
         <div className="relative z-0 w-full mb-3 group">
           <input
             type="text"
-            name="img"
-            id="img"
+            name="image"
+            id="image"
             className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 text-[#fed7aa] border-[#fed7aa] appearance-none dark:text-[#fed7aa] dark:border-[#fed7aa] dark:focus:border-[#fed7aa] focus:outline-none focus:ring-0 focus:border-[#fed7aa] peer"
             placeholder=" "
             required=""
-            defaultValue={product?.img}
+            defaultValue={product?.image}
           />
           <label
-            htmlFor="img"
+            htmlFor="image"
             className="peer-focus:font-medium absolute text-md text-gray-600 dark:text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#fed7aa] peer-focus:dark:text-[#fed7aa] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
             IMAGE
