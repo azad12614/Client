@@ -4,7 +4,7 @@ function Card({ product }) {
   return (
     <div className="card card-compact bg-[#fed7aa] shadow-xl">
       <figure>
-        <img src={`${pic}`} alt="Product image" />
+        <img className="object-cover h-52 w-64" src={`${pic}`} alt="Product image" />
       </figure>
       <div className="card-body">
         <h2 className="card-title justify-evenly">{product.name}</h2>
