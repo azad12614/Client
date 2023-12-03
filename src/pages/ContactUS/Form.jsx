@@ -34,7 +34,7 @@ function Form() {
       <form
         method="POST"
         onSubmit={formHandle}
-        className="m-auto p-5 bg-[#982176] rounded-lg border-1 border-[#fed7aa] text-[#fed7aa] font-semibold">
+        className="m-auto gap-y-2 w-96 bg-[#982176] p-5 rounded-lg border-1 border-[#fed7aa] text-[#fed7aa] font-semibold">
       <h1 className="text-center text-4xl font-semibold text-white pb-4">Contact Us</h1>
         <div className="grid md:grid-cols-2 md:gap-6">
           <div className="relative z-0 w-full mb-3 group">
