@@ -14,8 +14,11 @@ function Table() {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data.acknowledged) {
-          navigate("/");
+        if (data.deletedCount > 0) {
+          const otherProducts = products?.filter(
+            (product) => product._id != id
+          );
+          setGames(otherProducts);
         }
       });
   }
@@ -32,13 +35,16 @@ function Table() {
                 Name
               </th>
               <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
-                Price
-              </th>
-              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
-                Items
+                Genre
               </th>
               <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
                 Date
+              </th>
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
+                Platform
+              </th>
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
+                Price
               </th>
               <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
                 Actions
@@ -52,13 +58,16 @@ function Table() {
                   {product.name}
                 </td>
                 <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
-                  {product.price}
-                </td>
-                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
-                  {product.items}
+                  {product.genre}
                 </td>
                 <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
                   {product.date}
+                </td>
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
+                  {product.platform}
+                </td>
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
+                  {product.price}
                 </td>
                 <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
                   <Link to={`/product/${product?._id}`}>

@@ -14,7 +14,7 @@ function Table() {
     }).then((res) => res.json())
     .then((data) => {
       if (data.acknowledged) {
-        navigate("/");
+        navigate("/manage-member");
       }
     })
     
@@ -27,6 +27,7 @@ function Table() {
           <thead>
             <tr>
               <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">Name</th>
+              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">E-mail</th>
               <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">Role</th>
               <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">URL</th>
               <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">Message</th>
@@ -37,6 +38,7 @@ function Table() {
             {team?.map((member) => (
               <tr className="hover" key={member._id}>
                 <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">{member.name}</td>
+                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">{member.email}</td>
                 <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">{member.role}</td>
                 <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">{member.url}</td>
                 <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">{member.msg}</td>

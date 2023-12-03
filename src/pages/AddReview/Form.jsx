@@ -1,7 +1,7 @@
 function Form() {
     return (
       <>
-        <form className="m-auto p-5 rounded-lg border-1 border-[#fed7aa] text-[#fed7aa] font-semibold">
+        <form className="m-auto p-5 bg-[#982176] rounded-lg border-1 border-[#fed7aa] text-[#fed7aa] font-semibold">
         <h1 className="text-center text-4xl font-semibold text-white pb-4">Add Review</h1>
           <div className="grid md:grid-cols-2 md:gap-6">
             <div className="relative z-0 w-full mb-3 group">

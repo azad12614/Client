@@ -22,10 +22,6 @@ function App() {
       },
     },
     {
-      path: "/contact-us",
-      element: <ContactUS />,
-    },
-    {
       path: "/add-product",
       element: <AddProduct />,
     },
@@ -74,6 +70,10 @@ function App() {
       loader: function ({params}) {
         return fetch(`http://localhost:3000/Member/${params.id}`);
       },
+    },
+    {
+      path: "/contact-us",
+      element: <ContactUS />,
     },
     {
       path: "/add-review",
