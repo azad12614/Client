@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+import pic1 from "../images/logo.png";
 function Navbar() {
+  const logo = pic1;
   return (
     <>
       <div className="navbar mx-auto max-w-7xl bg-[#982176]">
@@ -62,7 +64,11 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="btn btn-ghost text-xl text-[#fed7aa] bg-[#3E001F] hover:bg-transparent border-0 rounded-full">3A</div>
+          {/* <div className="btn btn-ghost text-xl text-[#fed7aa] bg-[#3E001F] hover:bg-transparent border-0 rounded-full">3A</div> */}
+          <img
+            src={`${logo}`}
+            className="-m-4 w-16 rounded-lg"
+          />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-[#fed7aa]">

@@ -9,13 +9,13 @@ function Form() {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const role = event.target.role.value;
-    const img = event.target.img.value;
+    const image = event.target.image.value;
     const msg = event.target.msg.value;
     const team = {
       name,
       email,
       role,
-      img,
+      image,
       msg
     };
     fetch(`http://localhost:3000/update-member/${member?._id}`, {
@@ -96,15 +96,15 @@ function Form() {
         <div className="relative z-0 w-full mb-3 group">
           <input
             type="text"
-            name="img"
-            id="img"
+            name="image"
+            id="image"
             className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#fed7aa] appearance-none focus:border-[#fed7aa] focus:outline-none focus:ring-0 peer"
             placeholder=" "
             required=""
-            defaultValue={member?.img}
+            defaultValue={member?.image}
           />
           <label
-            htmlFor="img"
+            htmlFor="image"
             className="peer-focus:font-medium absolute text-md text-gray-600 dark:text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#fed7aa] peer-focus:dark:text-[#fed7aa] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
             Image URL
