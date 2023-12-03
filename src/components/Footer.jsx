@@ -4,7 +4,7 @@ function Footer() {
   const logo = pic1;
   return (
     <>
-      <footer className="mx-auto max-w-7xl bg-[#982176] text-white px-5">
+      <footer className="mx-auto max-w-screen bg-[#982176] text-white px-5">
         <div className="container p-6 mx-auto">
           <div className="flex flex-col items-center text-center">
             {/* <div className="btn btn-ghost text-xl text-[#fed7aa] bg-[#3E001F] hover:bg-transparent border-0 rounded-full">3A</div> */}
