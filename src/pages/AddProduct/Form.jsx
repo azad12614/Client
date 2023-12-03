@@ -19,7 +19,7 @@ function Form() {
       image,
       platform,
       price,
-      description
+      description,
     };
     fetch("http://localhost:3000/add-product", {
       method: "POST",
@@ -144,14 +144,14 @@ function Form() {
           </label>
         </div>
         <div className="relative z-0 w-full mb-3 group">
-        <textarea
-              id="description"
-              name="description"
-              rows={4}
-              className="mb-3 block p-2.5 w-full text-md text-[#fed7aa] bg-transparent rounded-lg border-1 border-gray-300 focus:ring-[#fed7aa] focus:border-[#fed7aa] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#fed7aa] dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Leave a Description..."
-              defaultValue={""}
-            />
+          <textarea
+            id="description"
+            name="description"
+            rows={4}
+            className="mb-3 block p-2.5 w-full text-md text-[#fed7aa] bg-transparent rounded-lg border-1 border-gray-300 focus:ring-[#fed7aa] focus:border-[#fed7aa] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#fed7aa] dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Leave a Description..."
+            defaultValue={""}
+          />
         </div>
         <button
           type="submit"
