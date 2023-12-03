@@ -68,7 +68,7 @@ function App() {
       path: "/update-member/:id",
       element: <UpdateMember></UpdateMember>,
       loader: function ({params}) {
-        return fetch(`http://localhost:3000/Member/${params.id}`);
+        return fetch(`http://localhost:3000/member/${params.id}`);
       },
     },
     {

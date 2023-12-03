@@ -16,9 +16,9 @@ function Form() {
       email,
       role,
       img,
-      msg,
+      msg
     };
-    fetch(`http://localhost:3000/update/${member?._id}`, {
+    fetch(`http://localhost:3000/update-member/${member?._id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",

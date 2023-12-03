@@ -26,7 +26,7 @@ function Form() {
       .then((res) => res.json())
       .then((data) => {
         if (data.acknowledged) {
-          navigate("/");
+          navigate("/manage-product");
         }
       });
   }
