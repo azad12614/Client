@@ -10,7 +10,7 @@ function Card({ product }) {
   return (
     <div className="card card-compact text-center bg-[#fed7aa] shadow-xl">
       <figure>
-        <img src="https://picsum.photos/250/200" alt="Product image" />
+        <img src={product?.image} alt="Product image" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{product.name}</h2>
