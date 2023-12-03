@@ -14,11 +14,8 @@ function Table() {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data.deletedCount > 0) {
-          const otherProducts = products?.filter(
-            (product) => product._id != id
-          );
-          setGames(otherProducts);
+        if (data.acknowledged) {
+          navigate("/manage-product");
         }
       });
   }
