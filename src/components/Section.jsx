@@ -3,7 +3,7 @@ function Section() {
   const pic = pic1;
   return (
     <>
-      <div className="hero mb-2 max-w-max rounded-lg bg-[#FFFFFF] text-white mx-auto">
+      <div className="hero mt-2 max-w-max rounded-lg bg-[#FFFFFF] text-white mx-auto">
         <div className="hero-content flex-row lg:flex-col">
           <img
             src={`${pic}`}

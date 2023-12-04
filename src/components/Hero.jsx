@@ -2,7 +2,7 @@ function Hero() {
   return (
     <>
       <div
-        className="hero mx-auto mb-2 max-w-screen min-h-screen"
+        className="hero mx-auto w-screen h-screen"
         style={{
           backgroundImage:
             "url(https://media.wired.com/photos/62855b1bb6cfd378a30c474a/master/w_1920,c_limit/Build-Game-Watch-It-Die-Hyper-Scape-Games.jpg)",
