@@ -40,7 +40,7 @@ function Form() {
       <form
         method="POST"
         onSubmit={formHandle}
-        className="mx-auto my-10 gap-y-2 w-96 bg-[#982176] p-5 rounded-lg border-1 border-[#fed7aa] text-[#fed7aa] font-semibold"
+        className="mx-auto mt-2 gap-y-2 w-96 bg-[#31304D] p-5 rounded-lg border-1 border-[#B6BBC4] text-[#B6BBC4] font-semibold"
       >
         <h1 className="text-center text-4xl font-semibold text-white pb-4">
           Add Product
@@ -51,13 +51,13 @@ function Form() {
               type="text"
               name="name"
               id="name"
-              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#fed7aa] appearance-none focus:border-[#fed7aa] focus:outline-none focus:ring-0 peer"
+              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#B6BBC4] appearance-none focus:border-[#B6BBC4] focus:outline-none focus:ring-0 peer"
               placeholder=""
-              required=""
+              required="y"
             />
             <label
               htmlFor="name"
-              className="peer-focus:font-medium absolute text-md text-[#fed7aa] dark:text-[#fed7aa] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#fed7aa] peer-focus:dark:text-[#fed7aa] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-md text-[#B6BBC4] dark:text-[#B6BBC4] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#B6BBC4] peer-focus:dark:text-[#B6BBC4] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               NAME
             </label>
@@ -67,13 +67,13 @@ function Form() {
               type="text"
               name="genre"
               id="genre"
-              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#fed7aa] appearance-none focus:border-[#fed7aa] focus:outline-none focus:ring-0 peer"
+              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#B6BBC4] appearance-none focus:border-[#B6BBC4] focus:outline-none focus:ring-0 peer"
               placeholder=""
-              required=""
+              required="y"
             />
             <label
               htmlFor="genre"
-              className="peer-focus:font-medium absolute text-md text-[#fed7aa] dark:text-[#fed7aa] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#fed7aa] peer-focus:dark:text-[#fed7aa] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-md text-[#B6BBC4] dark:text-[#B6BBC4] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#B6BBC4] peer-focus:dark:text-[#B6BBC4] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               GENRE
             </label>
@@ -83,13 +83,13 @@ function Form() {
               type="text"
               name="date"
               id="date"
-              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#fed7aa] appearance-none focus:border-[#fed7aa] focus:outline-none focus:ring-0 peer"
+              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#B6BBC4] appearance-none focus:border-[#B6BBC4] focus:outline-none focus:ring-0 peer"
               placeholder=""
-              required=""
+              required="y"
             />
             <label
               htmlFor="date"
-              className="peer-focus:font-medium absolute text-md text-[#fed7aa] dark:text-[#fed7aa] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#fed7aa] peer-focus:dark:text-[#fed7aa] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-md text-[#B6BBC4] dark:text-[#B6BBC4] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#B6BBC4] peer-focus:dark:text-[#B6BBC4] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               RELEASE DATE
             </label>
@@ -99,13 +99,13 @@ function Form() {
               type="text"
               name="image"
               id="image"
-              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#fed7aa] appearance-none focus:border-[#fed7aa] focus:outline-none focus:ring-0 peer"
+              className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#B6BBC4] appearance-none focus:border-[#B6BBC4] focus:outline-none focus:ring-0 peer"
               placeholder=" "
               required=""
             />
             <label
               htmlFor="image"
-              className="peer-focus:font-medium absolute text-md text-[#fed7aa] dark:text-[#fed7aa] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#fed7aa] peer-focus:dark:text-[#fed7aa] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-md text-[#B6BBC4] dark:text-[#B6BBC4] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#B6BBC4] peer-focus:dark:text-[#B6BBC4] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               IMAGE
             </label>
@@ -116,13 +116,13 @@ function Form() {
             type="text"
             name="platform"
             id="platform"
-            className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#fed7aa] appearance-none focus:border-[#fed7aa] focus:outline-none focus:ring-0 peer"
+            className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#B6BBC4] appearance-none focus:border-[#B6BBC4] focus:outline-none focus:ring-0 peer"
             placeholder=" "
-            required=""
+            required="y"
           />
           <label
             htmlFor="platform"
-            className="peer-focus:font-medium absolute text-md text-[#fed7aa] dark:text-[#fed7aa] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#fed7aa] peer-focus:dark:text-[#fed7aa] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="peer-focus:font-medium absolute text-md text-[#B6BBC4] dark:text-[#B6BBC4] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#B6BBC4] peer-focus:dark:text-[#B6BBC4] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
             PLATFORM
           </label>
@@ -132,13 +132,13 @@ function Form() {
             type="text"
             name="price"
             id="price"
-            className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#fed7aa] appearance-none focus:border-[#fed7aa] focus:outline-none focus:ring-0 peer"
+            className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#B6BBC4] appearance-none focus:border-[#B6BBC4] focus:outline-none focus:ring-0 peer"
             placeholder=" "
-            required=""
+            required="y"
           />
           <label
             htmlFor="price"
-            className="peer-focus:font-medium absolute text-md text-[#fed7aa] dark:text-[#fed7aa] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#fed7aa] peer-focus:dark:text-[#fed7aa] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="peer-focus:font-medium absolute text-md text-[#B6BBC4] dark:text-[#B6BBC4] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#B6BBC4] peer-focus:dark:text-[#B6BBC4] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
             PRICE
           </label>
@@ -148,14 +148,14 @@ function Form() {
             id="description"
             name="description"
             rows={4}
-            className="mb-3 block p-2.5 w-full text-md text-[#fed7aa] bg-transparent rounded-lg border-1 border-gray-300 focus:ring-[#fed7aa] focus:border-[#fed7aa] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#fed7aa] dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="mb-3 block p-2.5 w-full text-md text-[#B6BBC4] bg-transparent rounded-lg border-1 border-gray-300 focus:ring-[#B6BBC4] focus:border-[#B6BBC4] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#B6BBC4] dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Leave a Description..."
             defaultValue={""}
           />
         </div>
         <button
           type="submit"
-          className="btn text-center text-white bg-[#3E001F] hover:bg-transparent border-0"
+          className="btn text-center text-dark bg-[#F0ECE5] hover:bg-transparent border-0"
         >
           Submit
         </button>

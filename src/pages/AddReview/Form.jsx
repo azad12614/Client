@@ -14,7 +14,7 @@ function Form() {
               id="floating_first_name"
               className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 text-[#fed7aa] border-[#fed7aa] appearance-none dark:text-[#fed7aa] dark:border-[#fed7aa] dark:focus:border-[#fed7aa] focus:outline-none focus:ring-0 focus:border-[#fed7aa] peer"
               placeholder=" "
-              required=""
+              required="y"
             />
             <label
               htmlFor="floating_first_name"
@@ -30,7 +30,7 @@ function Form() {
               id="floating_last_name"
               className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 text-[#fed7aa] border-[#fed7aa] appearance-none dark:text-[#fed7aa] dark:border-[#fed7aa] dark:focus:border-[#fed7aa] focus:outline-none focus:ring-0 focus:border-[#fed7aa] peer"
               placeholder=" "
-              required=""
+              required="y"
             />
             <label
               htmlFor="floating_last_name"
@@ -48,7 +48,7 @@ function Form() {
               id="floating_subject"
               className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 text-[#fed7aa] border-[#fed7aa] appearance-none dark:text-[#fed7aa] dark:border-[#fed7aa] dark:focus:border-[#fed7aa] focus:outline-none focus:ring-0 focus:border-[#fed7aa] peer"
               placeholder=" "
-              required=""
+              required="y"
             />
             <label
               htmlFor="floating_subject"

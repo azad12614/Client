@@ -36,7 +36,7 @@ function Form() {
       <form
         method="POST"
         onSubmit={formHandle}
-        className="mx-auto my-10 gap-y-2 w-96 bg-[#982176] p-5 rounded-lg border-1 border-[#fed7aa]  text-[#fed7aa]  font-semibold"
+        className="mx-auto my-10 gap-y-2 w-96 bg-[#161A30] p-5 rounded-lg border-1 border-[#fed7aa]  text-[#fed7aa]  font-semibold"
       >
         <h1 className="text-center text-4xl font-semibold text-white pb-4">
           Add Member
@@ -49,7 +49,7 @@ function Form() {
               id="name"
               className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#fed7aa]  appearance-none focus:border-[#fed7aa]  focus:outline-none focus:ring-0 peer"
               placeholder=" "
-              required=""
+              required="y"
             />
             <label
               htmlFor="name"
@@ -65,7 +65,7 @@ function Form() {
               id="email"
               className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#fed7aa]  appearance-none focus:border-[#fed7aa]  focus:outline-none focus:ring-0 peer"
               placeholder=" "
-              required=""
+              required="y"
             />
             <label
               htmlFor="email"
@@ -81,7 +81,7 @@ function Form() {
               id="role"
               className="font-medium block py-2.5 px-0 w-full text-md bg-transparent border-b-2 border-[#fed7aa]  appearance-none focus:border-[#fed7aa]  focus:outline-none focus:ring-0 peer"
               placeholder=" "
-              required=""
+              required="y"
             />
             <label
               htmlFor="role"

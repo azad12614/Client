@@ -5,7 +5,7 @@ import { useLoaderData } from "react-router-dom";
 function MemberDetails() {
   const member = useLoaderData();
   return (
-    <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#F11A7B]">
+    <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#31304D]">
       <Navbar></Navbar>
       <h1 className="text-center text-4xl font-semibold text-white pb-4">Member Details</h1>
         
