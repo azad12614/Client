@@ -1,87 +1,22 @@
-import { Link } from "react-router-dom";
 import pic1 from "../images/logo.png";
 function Footer() {
   const logo = pic1;
   return (
     <>
-      <footer className="mx-auto max-w-screen bg-[#982176] text-white px-5">
-        <div className="container p-6 mx-auto">
+      <footer className="max-w-screen bg-[#982176] text-white px-5">
+        <div className="container mx-auto">
           <div className="flex flex-col items-center text-center">
             {/* <div className="btn btn-ghost text-xl text-[#fed7aa] bg-[#3E001F] hover:bg-transparent border-0 rounded-full">3A</div> */}
-            <img src={`${logo}`} className="-m-4 w-16 rounded-lg" />
-            <ul className="menu menu-horizontal flex flex-wrap justify-center mt-6 -mx-4">
-              <li className="font-bold">
-                <Link to={"/"}>Home</Link>
-              </li>
-              <li className="z-[1]">
-                <div className="dropdown dropdown-bottom">
-                  <div
-                    tabIndex={0}
-                    role="button"
-                    className="group flex mr-1 font-bold"
-                  >
-                    Product
-                    <svg
-                      className="fill-current h-5 w-5 pt-1 transform group-focus:-rotate-180
-  transition duration-150 ease-in-out"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                    </svg>
-                  </div>
-                  <ul className="dropdown-content z-[1] menu bg-dark mt-2 rounded-box w-44 font-semibold">
-                    <li className="rounded-sm p-1 hover:bg-gray-100">
-                      <Link to={"/add-product"}>Add Product</Link>
-                    </li>
-                    <li className="rounded-sm p-1 hover:bg-gray-100">
-                      <Link to={"/manage-product"}>Manage Product</Link>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="z-[1]">
-                <div className="dropdown dropdown-bottom">
-                  <div
-                    tabIndex={0}
-                    role="button"
-                    className="group flex mr-1 font-bold"
-                  >
-                    Team
-                    <svg
-                      className="fill-current h-5 w-5 pt-1 transform group-focus:-rotate-180
-  transition duration-150 ease-in-out"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                    </svg>
-                  </div>
-                  <ul className="dropdown-content z-[1] menu bg-dark mt-2 rounded-box w-44 font-semibold">
-                    <li className="rounded-sm p-1 hover:bg-gray-100">
-                      <Link to={"/add-member"}>Add Member</Link>
-                    </li>
-                    <li className="rounded-sm p-1 hover:bg-gray-100">
-                      <Link to={"/manage-member"}>Manage Member</Link>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="font-bold">
-                <Link to={"/contact-us"}>Contact US</Link>
-              </li>
-              <li className="font-bold">
-                <Link to={"/add-review"}>Add Review</Link>
-              </li>
-            </ul>
+            <img src={`${logo}`} className="w-16 rounded-lg" />
+            <h1 className="font-bold text-4xl text-[#fed7aa]">3A GAMING LIMITED</h1>
           </div>
         </div>
-        <hr className="mb-10 border-gray-200" />
-        <div className="flex flex-col pb-4 items-center sm:flex-row sm:justify-between">
-          <p className="text-sm text-gray-500 dark:text-gray-300">
+        <hr className="border-gray-200" />
+        <div className="flex flex-col py-2 items-center sm:flex-row sm:justify-between">
+          <p className="text-md text-gray-500 dark:text-gray-300">
             © Copyright 2021. All Rights Reserved.
           </p>
-          <div className="flex -mx-2">
+          <div className="flex">
             <a
               href="#"
               className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"

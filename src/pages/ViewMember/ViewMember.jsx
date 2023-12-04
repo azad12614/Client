@@ -1,14 +1,15 @@
+import Carousel from "../../components/Carousel";
 import Footer from "../../components/Footer";
-import Hero from "../../components/Hero";
 import Navbar from "../../components/Navbar";
-import Section from "../../components/Section";
 
-function Home() {
+function AddProduct() {
   return (
     <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#F11A7B]">
       <Navbar></Navbar>
-      <Hero></Hero>
-      <Section></Section>
+      <h1 className="text-center text-4xl font-semibold text-white my-4">
+          Our Team
+        </h1>
+      <Carousel></Carousel>
       <div className="mt-auto mb-0">
         <Footer></Footer>
       </div>
@@ -16,4 +17,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default AddProduct;

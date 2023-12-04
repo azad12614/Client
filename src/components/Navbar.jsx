@@ -41,6 +41,9 @@ function Navbar() {
                       <Link to={"/add-product"}>Add Product</Link>
                     </li>
                     <li>
+                      <Link to={"/view-product"}>View Product</Link>
+                    </li>
+                    <li>
                       <Link to={"/manage-product"}>Manage Product</Link>
                     </li>
                   </ul>
@@ -52,6 +55,9 @@ function Navbar() {
                   <ul>
                     <li>
                       <Link to={"/add-member"}>Add Member</Link>
+                    </li>
+                    <li>
+                      <Link to={"/View-member"}>View Member</Link>
                     </li>
                     <li>
                       <Link to={"/manage-member"}>Manage Member</Link>
@@ -97,6 +103,9 @@ function Navbar() {
                     <Link to={"/add-product"}>Add Product</Link>
                   </li>
                   <li className="rounded-sm p-1 hover:bg-gray-100">
+                    <Link to={"/view-product"}>View Product</Link>
+                  </li>
+                  <li className="rounded-sm p-1 hover:bg-gray-100">
                     <Link to={"/manage-product"}>Manage Product</Link>
                   </li>
                 </ul>
@@ -122,6 +131,9 @@ function Navbar() {
                 <ul className="dropdown-content z-[1] menu bg-dark mt-2 rounded-box w-44 font-semibold">
                   <li className="rounded-sm p-1 hover:bg-gray-100">
                     <Link to={"/add-member"}>Add Member</Link>
+                  </li>
+                  <li className="rounded-sm p-1 hover:bg-gray-100">
+                    <Link to={"/view-member"}>View Member</Link>
                   </li>
                   <li className="rounded-sm p-1 hover:bg-gray-100">
                     <Link to={"/manage-member"}>Manage Member</Link>
