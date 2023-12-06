@@ -40,7 +40,7 @@ function Form() {
       <form
         method="POST"
         onSubmit={formHandle}
-        className="mx-auto mt-2 gap-y-2 w-96 bg-[#31304D] p-5 rounded-lg border-1 border-[#B6BBC4] text-[#B6BBC4] font-semibold"
+        className="m-auto w-96 bg-[#161A30] px-10 pt-4 pb-3 rounded-lg border-1 border-[#B6BBC4] text-[#B6BBC4] font-semibold"
       >
         <h1 className="text-center text-4xl font-semibold text-white pb-4">
           Add Product
@@ -155,7 +155,7 @@ function Form() {
         </div>
         <button
           type="submit"
-          className="btn text-center text-dark bg-[#F0ECE5] hover:bg-transparent border-0"
+          className="btn text-center text-[#fed7aa] bg-[#31304D] hover:bg-transparent border-0"
         >
           Submit
         </button>

@@ -16,15 +16,15 @@ const Carousel = () => {
     const pic = member?.image;
     console.log(pic);
     return (
-      <div className="bg-[#fed7aa] shadow-xl" key={member._id}>
+      <div className="bg-[#161A30] shadow-xl" key={member._id}>
         <div className="m-auto border-2 border-dark">
           <figure>
             <img className="object-cover h-52 w-64" src={`${pic}`} alt="Member image" />
           </figure>
         </div>
-        <div className="card-body">
+        <div className="card-body text-[#fed7aa]">
           <h4 className="card-title justify-evenly font-bold -mt-5 mb-2">{member.name}</h4>
-          <p className="bg-[#982176] p-1 rounded-lg mx-auto font-semibold ">{member.role}</p>
+          <h1 className="btn text-center text-[#fed7aa] bg-[#31304D] w-max m-auto hover:bg-transparent border-0">{member.role}</h1>
           <div className="card-actions justify-evenly mt-3 -mb-3">
             <FaLinkedinIn></FaLinkedinIn>
             <FaFacebook></FaFacebook>

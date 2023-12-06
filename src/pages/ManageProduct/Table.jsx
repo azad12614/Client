@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
@@ -25,48 +24,36 @@ function Table() {
         <h1 className="text-center text-4xl font-semibold text-white pb-4">
           Manage your Product
         </h1>
-        <table className="table">
+        <table className="table table-dark">
           <thead>
-            <tr>
-              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
-                Name
-              </th>
-              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
-                Genre
-              </th>
-              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
-                Date
-              </th>
-              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
-                Platform
-              </th>
-              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
-                Price
-              </th>
-              <th className="text-center font-bold text-lg border-success bg-[#982176] text-[#fed7aa]">
-                Actions
-              </th>
+            <tr className="border-[#000000]">
+              <th className="text-center font-bold text-lg">Name</th>
+              <th className="text-center font-bold text-lg">Genre</th>
+              <th className="text-center font-bold text-lg">Date</th>
+              <th className="text-center font-bold text-lg">Platform</th>
+              <th className="text-center font-bold text-lg">Price</th>
+              <th className="text-center font-bold text-lg">Actions</th>
             </tr>
           </thead>
           <tbody>
             {products?.map((product) => (
               <tr className="hover" key={product._id}>
-                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
+                <td className="text-center text-lg border-[#000000]">
                   {product.name}
                 </td>
-                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
+                <td className="text-center text-lg border-[#000000]">
                   {product.genre}
                 </td>
-                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
+                <td className="text-center text-lg border-[#000000]">
                   {product.date}
                 </td>
-                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
+                <td className="text-center text-lg border-[#000000]">
                   {product.platform}
                 </td>
-                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
+                <td className="text-center text-lg border-[#000000]">
                   {product.price}
                 </td>
-                <td className="text-center text-base border-white bg-[#982176] text-[#fed7aa]">
+                <td className="text-center text-lg border-[#000000]">
                   <Link to={`/product/${product?._id}`}>
                     <button className="btn btn-sm md:btn-md lg:btn-lg btn-outline btn-accent mx-1">
                       {" "}

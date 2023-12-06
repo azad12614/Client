@@ -5,7 +5,7 @@ import Section from "../../components/Section";
 
 function AddProduct() {
   return (
-    <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#F11A7B]">
+    <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#31304D]">
       <Navbar></Navbar>
       <Section></Section>
       <h1 className="text-center text-4xl font-semibold text-white my-3">

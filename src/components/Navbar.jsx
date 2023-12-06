@@ -28,7 +28,7 @@ function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="text-[#fed7aa] menu menu-md dropdown-content mt-2 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="bg-[#161A30] text-[#fed7aa] menu menu-md dropdown-content mt-2 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li className="font-bold">
                 <Link to={"/"}>Home</Link>
@@ -98,7 +98,7 @@ function Navbar() {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
-                <ul className="dropdown-content z-[1] menu bg-dark mt-2 rounded-box w-44 font-semibold">
+                <ul className="dropdown-content z-[1] menu bg-[#161A30] mt-2 rounded-box w-44 font-semibold">
                   <li className="rounded-sm p-1 hover:bg-gray-100">
                     <Link to={"/add-product"}>Add Product</Link>
                   </li>
@@ -128,7 +128,7 @@ function Navbar() {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
-                <ul className="dropdown-content z-[1] menu bg-dark mt-2 rounded-box w-44 font-semibold">
+                <ul className="dropdown-content z-[1] menu bg-[#161A30] mt-2 rounded-box w-44 font-semibold">
                   <li className="rounded-sm p-1 hover:bg-gray-100">
                     <Link to={"/add-member"}>Add Member</Link>
                   </li>
