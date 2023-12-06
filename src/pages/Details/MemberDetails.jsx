@@ -16,10 +16,15 @@ function MemberDetails() {
           <img src={`${pic}`} alt="member" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-[#FFFFFF] text-bold text-2xl">{member.name}</h2>
+          <h2 className="card-title text-center justify-center text-[#FFFFFF] text-bold text-2xl">{member.name}</h2>
           <div className="card-actions justify-center">
             <div className="text-center text-[#fed7aa] text-bold text-xl rounded-lg hover:bg-transparent border-0">
               {member.role}
+            </div>
+          </div>
+          <div className="card-actions justify-center">
+            <div className="text-center text-[#FFFFFF] text-bold text-xl rounded-lg hover:bg-transparent border-0">
+              E-mail: {member.email}
             </div>
           </div>
           <p className="text-[#FFFFFF]">{member.msg}...</p>
