@@ -18,7 +18,7 @@ function Footer() {
           </p>
           <div className="flex">
             <a
-              href="#"
+              href="https://www.reddit.com/"
               className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
               aria-label="Reddit"
             >
@@ -32,7 +32,7 @@ function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/"
               className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
               aria-label="Facebook"
             >
@@ -46,7 +46,7 @@ function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://github.com/"
               className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
               aria-label="Github"
             >

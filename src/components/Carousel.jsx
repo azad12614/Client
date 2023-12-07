@@ -63,9 +63,15 @@ const Carousel = () => {
             </dialog>
           </div>
           <div className="card-actions justify-evenly mt-3 -mb-3">
-            <FaLinkedinIn></FaLinkedinIn>
-            <FaFacebook></FaFacebook>
-            <FaXTwitter></FaXTwitter>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <FaLinkedinIn></FaLinkedinIn>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <FaFacebook></FaFacebook>
+            </a>
+            <a href="https://twitter.com/login" target="_blank">
+              <FaXTwitter></FaXTwitter>
+            </a>
           </div>
         </div>
       </div>

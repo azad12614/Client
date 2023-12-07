@@ -41,11 +41,11 @@ function Table() {
                 <td className="text-center text-lg border-[#000000] ">{member.role}</td>
                 <td className="text-center text-lg border-[#000000] ">
                   <Link to={`/member/${member?._id}`}>
-                    <button className="btn btn-sm md:btn-md lg:btn-lg btn-outline btn-accent mx-1"> <FaEye></FaEye> </button>
+                    <button className="btn btn-sm md:btn-md lg:btn-lg btn-accent mx-1"> <FaEye></FaEye> </button>
                   </Link>
-                  <button className="btn btn-sm md:btn-md lg:btn-lg btn-outline btn-warning  mx-1" onClick={()=>handleDelete(member?._id)}> <TbHttpDelete></TbHttpDelete> </button>
+                  <button className="btn btn-sm md:btn-md lg:btn-lg btn-warning  mx-1" onClick={()=>handleDelete(member?._id)}> <TbHttpDelete></TbHttpDelete> </button>
                   <Link to={`/update-member/${member?._id}`}>
-                    <button className="btn btn-sm md:btn-md lg:btn-lg btn-outline btn-primary mx-1"> <GrUpdate></GrUpdate> </button>
+                    <button className="btn btn-sm md:btn-md lg:btn-lg btn-primary mx-1"> <GrUpdate></GrUpdate> </button>
                   </Link>
                 </td>
               </tr>

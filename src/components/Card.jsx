@@ -25,7 +25,7 @@ function Card({ product }) {
         </p>
         <div className="card-actions justify-evenly">
           <Link to={`/product/${product?._id}`}>
-            <button className="btn text-center text-[#fed7aa] bg-[#31304D] hover:bg-transparent border-0">
+            <button className="btn btn-primary text-center text-[#FFFFFF] hover:bg-transparent border-0">
               Buy At ${product.price}
             </button>
           </Link>

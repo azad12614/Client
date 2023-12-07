@@ -21,7 +21,7 @@ function Hero() {
               GET OVERWORLD TODAY!
             </h1>
             <Link to={"/view-product"}>
-              <button className="px-10 btn text-center sm:text-lg md:text-xl lg:text-2xl text-[#FFFFFF] bg-[#F11A7B] hover:bg-transparent border-0 mt-4">
+              <button className="px-10 btn text-center sm:text-lg md:text-xl lg:text-2xl text-[#FFFFFF] bg-[#F11A6B] hover:bg-transparent border-0 mt-4">
                 Get Started
               </button>
             </Link>
