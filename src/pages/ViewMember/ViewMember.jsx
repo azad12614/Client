@@ -3,7 +3,7 @@ import Carousel from "../../components/Carousel";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
-function AddProduct() {
+function ViewMember() {
   return (
     <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#31304D]">
       <Navbar></Navbar>
@@ -19,4 +19,4 @@ function AddProduct() {
   );
 }
 
-export default AddProduct;
+export default ViewMember;

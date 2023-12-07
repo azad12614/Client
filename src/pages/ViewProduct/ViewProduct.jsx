@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import Cards from "../../components/Cards";
 import Section from "../../components/Section";
 
-function AddProduct() {
+function ViewProduct() {
   return (
     <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#31304D]">
       <Navbar></Navbar>
@@ -19,4 +19,4 @@ function AddProduct() {
   );
 }
 
-export default AddProduct;
+export default ViewProduct;
