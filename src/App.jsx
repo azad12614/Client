@@ -26,7 +26,7 @@ function App() {
     },
     {
       path: "/view-product",
-      element: <ViewProduct/>,
+      element: <ViewProduct />,
       loader: function () {
         return fetch("http://localhost:3000/all-products");
       },
@@ -41,24 +41,24 @@ function App() {
     {
       path: "/product/:id",
       element: <ProductDetails></ProductDetails>,
-      loader: function ({params}) {
+      loader: function ({ params }) {
         return fetch(`http://localhost:3000/product/${params.id}`);
       },
     },
     {
       path: "/update/:id",
       element: <UpdateProduct></UpdateProduct>,
-      loader: function ({params}) {
+      loader: function ({ params }) {
         return fetch(`http://localhost:3000/product/${params.id}`);
       },
     },
     {
       path: "/add-member",
-      element: <AddMember/>,
+      element: <AddMember />,
     },
     {
       path: "/view-member",
-      element: <ViewMember/>,
+      element: <ViewMember />,
     },
     {
       path: "/manage-member",
@@ -70,14 +70,14 @@ function App() {
     {
       path: "/member/:id",
       element: <MemberDetails></MemberDetails>,
-      loader: function ({params}) {
+      loader: function ({ params }) {
         return fetch(`http://localhost:3000/member/${params.id}`);
       },
     },
     {
       path: "/update-member/:id",
       element: <UpdateMember></UpdateMember>,
-      loader: function ({params}) {
+      loader: function ({ params }) {
         return fetch(`http://localhost:3000/member/${params.id}`);
       },
     },
@@ -88,7 +88,7 @@ function App() {
     {
       path: "/add-review",
       element: <AddReview />,
-    }
+    },
   ]);
   return <RouterProvider router={router} />;
 }
